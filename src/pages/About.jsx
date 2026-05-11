@@ -1,9 +1,8 @@
 import SectionTitle from "../components/SectionTitle.jsx";
 import { bookInfo } from "../data/bookInfo";
+import coverImage from "../assets/book-cover.jpg";
 
 export default function About() {
-  const coverUrl = `${import.meta.env.BASE_URL}images/book-cover.jpg`;
-
   return (
     <div className="space-y-8">
       <SectionTitle
@@ -14,7 +13,7 @@ export default function About() {
       <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
         <figure className="overflow-hidden rounded-3xl border border-slate-200 bg-white p-3 shadow-sm">
           <img
-            src={coverUrl}
+            src={coverImage}
             alt={`${bookInfo.title} 도서 표지`}
             className="aspect-[2/3] w-full rounded-2xl object-cover shadow-inner"
           />
