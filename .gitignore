@@ -4,3 +4,4 @@ dist/
 .env.*
 npm-debug.log*
 *.local
+/손자병법 표지.jpg

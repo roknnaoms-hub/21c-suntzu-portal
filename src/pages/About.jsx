@@ -2,6 +2,8 @@ import SectionTitle from "../components/SectionTitle.jsx";
 import { bookInfo } from "../data/bookInfo";
 
 export default function About() {
+  const coverUrl = `${import.meta.env.BASE_URL}images/book-cover.jpg`;
+
   return (
     <div className="space-y-8">
       <SectionTitle
@@ -10,13 +12,13 @@ export default function About() {
         description="고전 전략과 현대 의사결정, 인공지능, ISO 경영시스템, 국가안보를 연결하는 실천적 손자병법 해설서입니다."
       />
       <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
-        <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-          <div className="aspect-[3/4] rounded-2xl bg-gradient-to-br from-slate-950 via-slate-800 to-amber-800 p-8 text-white shadow-inner">
-            <div className="hanja text-lg text-amber-200">孫子兵法</div>
-            <h2 className="mt-8 text-4xl font-black leading-tight">21세기 현대인을 위한<br />손자병법</h2>
-            <p className="mt-8 text-lg text-amber-100">{bookInfo.subtitle}</p>
-          </div>
-        </div>
+        <figure className="overflow-hidden rounded-3xl border border-slate-200 bg-white p-3 shadow-sm">
+          <img
+            src={coverUrl}
+            alt={`${bookInfo.title} 도서 표지`}
+            className="aspect-[2/3] w-full rounded-2xl object-cover shadow-inner"
+          />
+        </figure>
         <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm prose-korean">
           <h3 className="text-2xl font-black">{bookInfo.title}</h3>
           <p className="mt-4">{bookInfo.description}</p>

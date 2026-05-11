@@ -3,8 +3,8 @@ export const resources = [
     id: "res-001",
     title: "도서 표지 이미지",
     type: "image",
-    description: "GitHub Pages public 폴더에 cover.png 파일을 추가하면 홈 화면과 자료실에서 표시됩니다.",
-    path: "/cover.png"
+    description: "도서 소개 화면에 표시되는 손자병법 표지 이미지입니다.",
+    path: "/images/book-cover.jpg"
   },
   {
     id: "res-002",
