@@ -1,6 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../../tailwind.config.js";
+
+/* Preserve v3 border defaults while using the supported v4 compiler. */
+@layer base { *, ::before, ::after { border-color: var(--color-gray-200, currentColor); } }
 
 :root {
   color-scheme: light;
@@ -24,3 +26,4 @@ body {
 .prose-korean p {
   line-height: 1.9;
 }
+

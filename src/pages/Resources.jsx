@@ -11,7 +11,7 @@ export default function Resources() {
       />
       <div className="grid gap-5 md:grid-cols-2">
         {resources.map((resource) => (
-          <article key={resource.id} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <article key={resource.id} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xs">
             <div className="text-sm font-bold text-amber-700">{resource.type}</div>
             <h3 className="mt-2 text-2xl font-black">{resource.title}</h3>
             <p className="mt-3 leading-8 text-slate-700">{resource.description}</p>

@@ -39,7 +39,7 @@ export default function Header() {
 
         <Link
           to="/search"
-          className="inline-flex items-center gap-2 rounded-full bg-amber-700 px-4 py-2 text-sm font-bold text-white shadow-sm transition hover:bg-amber-800"
+          className="inline-flex items-center gap-2 rounded-full bg-amber-700 px-4 py-2 text-sm font-bold text-white shadow-xs transition hover:bg-amber-800"
         >
           <Search className="h-4 w-4" />
           검색

@@ -7,7 +7,7 @@ export default function ChapterDetail() {
 
   if (!chapter) {
     return (
-      <div className="rounded-2xl bg-white p-8 shadow-sm">
+      <div className="rounded-2xl bg-white p-8 shadow-xs">
         <h1 className="text-2xl font-black">편을 찾을 수 없습니다.</h1>
         <Link to="/chapters" className="mt-4 inline-flex text-amber-700">13편 목록으로 돌아가기</Link>
       </div>
@@ -15,7 +15,7 @@ export default function ChapterDetail() {
   }
 
   return (
-    <article className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+    <article className="rounded-3xl border border-slate-200 bg-white p-8 shadow-xs">
       <Link to="/chapters" className="text-sm font-bold text-amber-700">← 13편 목록</Link>
       <div className="mt-6 text-sm font-bold text-amber-700">제{chapter.number}편 · <span className="hanja">{chapter.titleHanja}</span></div>
       <h1 className="mt-2 text-4xl font-black text-slate-950">{chapter.titleKo}</h1>

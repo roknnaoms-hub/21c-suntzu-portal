@@ -20,7 +20,7 @@ export default function SearchPage() {
       <div className="mt-8 space-y-4">
         {query && results.length === 0 && <p className="rounded-2xl bg-white p-6 text-slate-600">검색 결과가 없습니다.</p>}
         {results.map((item) => (
-          <article key={`${item.type}-${item.id ?? item.term}`} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <article key={`${item.type}-${item.id ?? item.term}`} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xs">
             <div className="text-xs font-bold uppercase tracking-wider text-amber-700">{typeLabel(item.type)}</div>
             <h3 className="mt-2 text-xl font-black">{item.title ?? item.titleKo ?? item.term}</h3>
             <p className="mt-3 line-clamp-3 leading-7 text-slate-700">

@@ -1,6 +1,6 @@
 export default function PhraseCard({ phrase }) {
   return (
-    <article className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+    <article className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xs">
       <div className="text-sm font-bold text-amber-700">{phrase.chapterTitle} · {phrase.theme}</div>
       <section className="mt-5">
         <h4 className="font-bold text-slate-950">① 원문</h4>

@@ -2,7 +2,7 @@
   "name": "21c-suntzu-portal",
   "version": "0.1.0",
   "private": false,
-  "description": "21세기 현대인을 위한 손자병법 웹포털",
+  "description": "21\uc138\uae30 \ud604\ub300\uc778\uc744 \uc704\ud55c \uc190\uc790\ubcd1\ubc95 \uc6f9\ud3ec\ud138",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,21 +11,24 @@
     "lint": "eslint src --ext js,jsx"
   },
   "dependencies": {
-    "@vitejs/plugin-react": "latest",
-    "vite": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-router-dom": "latest",
-    "fuse.js": "latest",
-    "lucide-react": "latest"
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.5",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.4",
+    "fuse.js": "^7.5.0",
+    "lucide-react": "^1.61.0"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.17",
+    "tailwindcss": "^4.3.3",
     "postcss": "^8.4.49",
-    "autoprefixer": "^10.4.20",
-    "eslint": "latest",
-    "@eslint/js": "latest",
-    "eslint-plugin-react-hooks": "latest",
-    "eslint-plugin-react-refresh": "latest"
+    "eslint": "^10.13.0",
+    "@eslint/js": "^10.0.1",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "@tailwindcss/postcss": "^4.3.3"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   }
 }

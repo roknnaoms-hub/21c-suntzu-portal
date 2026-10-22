@@ -11,14 +11,14 @@ export default function About() {
         description="고전 전략과 현대 의사결정, 인공지능, ISO 경영시스템, 국가안보를 연결하는 실천적 손자병법 해설서입니다."
       />
       <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
-        <figure className="overflow-hidden rounded-3xl border border-slate-200 bg-white p-3 shadow-sm">
+        <figure className="overflow-hidden rounded-3xl border border-slate-200 bg-white p-3 shadow-xs">
           <img
             src={coverImage}
             alt={`${bookInfo.title} 도서 표지`}
             className="aspect-[2/3] w-full rounded-2xl object-cover shadow-inner"
           />
         </figure>
-        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm prose-korean">
+        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-xs prose-korean">
           <h3 className="text-2xl font-black">{bookInfo.title}</h3>
           <p className="mt-4">{bookInfo.description}</p>
           <p>

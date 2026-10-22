@@ -1,6 +1,6 @@
 export default function ApplicationCard({ item }) {
   return (
-    <article className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+    <article className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xs">
       <h3 className="text-2xl font-black text-slate-950">{item.title}</h3>
       <p className="mt-2 font-semibold text-amber-700">{item.subtitle}</p>
       <p className="mt-4 leading-8 text-slate-700">{item.summary}</p>

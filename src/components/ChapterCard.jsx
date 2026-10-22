@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function ChapterCard({ chapter }) {
   return (
-    <article className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+    <article className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-xs transition hover:-translate-y-1 hover:shadow-md">
       <div className="text-sm font-semibold text-amber-700">
         제{chapter.number}편 · <span className="hanja">{chapter.titleHanja}</span>
       </div>

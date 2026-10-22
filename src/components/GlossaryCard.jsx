@@ -1,6 +1,6 @@
 export default function GlossaryCard({ item }) {
   return (
-    <article className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+    <article className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xs">
       <div className="flex items-start justify-between gap-4">
         <div>
           <h3 className="text-xl font-black text-slate-950">{item.term}</h3>
